@@ -239,7 +239,7 @@
     .edu-degree { font-size: 1.05rem; font-weight: 600; color: var(--text); margin: .2rem 0 .3rem; }
     .edu-meta { font-size: .88rem; color: var(--text-light); margin-bottom: 1.1rem; }
 
-    /* ── DETAILS / PROFILE ────────────────────────── */
+    /* ── ABOUT / PROFILE ────────────────────────── */
     .profile-grid { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 5rem; align-items: start; }
     .profile-text .h3 { margin-bottom: 1.8rem; }
     .profile-text p { margin-bottom: 1.4rem; }
@@ -354,11 +354,11 @@
     </svg>
   </a>
   <ul class="navlinks">
-    <li><a href="#project-1" data-nav="projects">Projects</a></li>
+    <li><a href="#about" data-nav="about">About</a></li>
     <li><a href="#experience" data-nav="experience">Experience</a></li>
+    <li><a href="#project-1" data-nav="projects">Projects</a></li>
     <li><a href="#skills" data-nav="skills">Skills</a></li>
     <li><a href="#journey" data-nav="journey">Journey</a></li>
-    <li><a href="#details" data-nav="details">Details</a></li>
     <li><a href="#contact" data-nav="contact">Contact</a></li>
   </ul>
   <div class="socials">
@@ -375,11 +375,11 @@
 
 <button class="menu-btn" id="menuBtn" aria-label="Open menu" aria-expanded="false"><span></span><span></span><span></span></button>
 <div class="mobile-menu" id="mobileMenu" aria-hidden="true">
-  <a class="m-link" href="#project-1">Projects</a>
+  <a class="m-link" href="#about">About</a>
   <a class="m-link" href="#experience">Experience</a>
+  <a class="m-link" href="#project-1">Projects</a>
   <a class="m-link" href="#skills">Skills</a>
   <a class="m-link" href="#journey">Journey</a>
-  <a class="m-link" href="#details">Details</a>
   <a class="m-link" href="#contact">Contact</a>
   <div class="m-socials">
     <a href="https://linkedin.com/in/srthakre" target="_blank" rel="noopener" aria-label="LinkedIn"><svg viewBox="0 0 24 24"><path d="M20.45 20.45h-3.55v-5.57c0-1.33-.03-3.04-1.85-3.04-1.86 0-2.14 1.45-2.14 2.94v5.67H9.35V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.06 2.06 0 1 1 0-4.13 2.06 2.06 0 0 1 0 4.13zM7.12 20.45H3.56V9h3.56v11.45zM22.23 0H1.77C.79 0 0 .77 0 1.73v20.54C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.73V1.73C24 .77 23.2 0 22.22 0z"/></svg></a>
@@ -409,8 +409,34 @@
         <button class="btn btn-text" onclick="openResume()">View resume <span class="arrow" aria-hidden="true">→</span></button>
       </div>
     </div>
-    <a href="#stats" class="scroll-ind" aria-label="Scroll down"></a>
+    <a href="#about" class="scroll-ind" aria-label="Scroll down"></a>
   </section>
+
+
+  <!-- ABOUT -->
+  <section class="section" id="about" data-section="about">
+    <div class="wrap">
+      <div class="profile-grid">
+        <div class="profile-text">
+          <h3 class="h3 reveal">Hi there</h3>
+          <p class="reveal d1">I'm Sanket, a <strong>Business Intelligence Engineer at <a class="link" href="https://www.amazon.jobs" target="_blank" rel="noopener">Amazon</a></strong> in Seattle, five years in. At Amazon, BIE is an analytics and data engineering role: I design and build the pipelines, dimensional models and self-serve reporting that business, finance, operations and external partners run on.</p>
+          <p class="reveal d1">I tend to end up on the systems nobody owns. Two of my main projects were inherited under pressure, both were on fire when I got them, and both are still running. My focus is the full stack from ingestion and transformation through modeling to the BI layer, with an emphasis on reliability, automation and catching a bad number before anyone downstream sees it.</p>
+          <p class="reveal d2">I hold an <strong>MS in Computer Engineering from Cal State Fullerton</strong> and a BE in Electronics &amp; Telecommunications from the University of Pune. I'm always up for talking data, so feel free to <a class="link" href="https://calendar.app.google/ZpdEWqV7EaWZCEdR7" target="_blank" rel="noopener">grab a time on my calendar</a> or drop me a line at <a class="link" href="mailto:sanket.thakre3@gmail.com">sanket.thakre3@gmail.com</a>.</p>
+          <ul class="facts reveal d2">
+            <li><span>Location</span><span>Seattle, WA</span></li>
+            <li><span>Currently</span><span>BIE @ Amazon Pharmacy</span></li>
+            <li><span>Open to</span><span>Analytics / Data / BI Engineering, remote or relocation</span></li>
+          </ul>
+        </div>
+        <div class="profile-visual reveal" id="profileVisual">
+          <div class="divider-label"><span class="divider"></span>About me</div>
+          <div class="photo-frame"><img src="profile_photo_portrait.jpg" alt="Sanket Thakre smiling, in a grey suit" loading="lazy"></div>
+          <div class="name-deva" lang="mr" aria-label="Sanket in Devanagari"><span>सं</span><span>के</span><span>त</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
 
   <!-- STATS -->
   <div class="stats" id="stats">
@@ -424,9 +450,70 @@
     </div>
   </div>
 
+
+  <!-- EXPERIENCE -->
+  <section class="section" id="experience" data-section="experience">
+    <div class="wrap">
+      <div class="divider-label reveal"><span class="divider"></span>Experience</div>
+      <h2 class="heading reveal d1">Where I've worked</h2>
+
+      <div class="org">
+        <div class="org-meta reveal">
+          <div class="org-logo"><img src="logos/amazon.png" alt="Amazon logo" loading="lazy" onerror="logoFallback(this,'AMZN')"></div>
+          <div class="org-name">Amazon</div>
+          <div class="org-dates">Aug 2021 - Present<br>Seattle, WA</div>
+        </div>
+        <div class="org-roles">
+          <div class="role reveal">
+            <div class="role-head"><div class="role-title">Business Intelligence Engineer · Pharmacy</div><div class="role-date">Jun 2025 - Present</div></div>
+            <ul class="bullets">
+              <li>Migrated the full performance guarantee reporting stack for two pharmacy benefit manager partners off another org's infrastructure: 12 contractual metrics, 46 ETL pipelines and 24 warehouse tables across dev and prod, plus SFTP delivery to external partners.</li>
+              <li>Repeatedly catch reporting logic errors on contractual metrics before they trigger financial penalties. Audited one after a threshold breach, proved 40 fulfillment errors had been wrongly counted against Amazon, and drove the fix that corrected the quarter.</li>
+              <li>Resolved a Sev-2 contract compliance defect in partner call metrics, correcting the calculation from 100% of calls to the contractual top 80%, then deploying and backfilling history so partner-facing dashboards were accurate.</li>
+              <li>Built the first proactive data quality alerting on metrics carrying financial exposure, where none existed before.</li>
+              <li>Automated the weekly operations speed business review and the daily executive flash report, both previously assembled by hand, delivering a PDF and formula-level Excel workbook to a self-service subscriber list.</li>
+              <li>Launched three QuickSight dashboards on fulfillment learning curves and pharmacy services productivity, used as evidence in State Board of Pharmacy inspections and regulatory accreditation.</li>
+              <li>Built North America kiosk launch analytics, including replenishment and order pipelines giving visibility into kiosk performance across launch markets.</li>
+            </ul>
+          </div>
+          <div class="role reveal">
+            <div class="role-head"><div class="role-title">Business Intelligence Engineer · Central Operations</div><div class="role-date">Aug 2021 - Jun 2025</div></div>
+            <ul class="bullets">
+              <li>Took over the model behind Amazon's global fulfillment operational planning weeks before the 2025 annual cycle, when the maintaining team moved orgs. Reverse-engineered nine interconnected stored procedures from a short handover and delivered the cycle on schedule across NA, EU, Japan and India.</li>
+              <li>Diagnosed that system's structural problems, including manual execution triggers, no version control, scattered dashboard queries and minimal documentation, and scoped the modernization plan to address them.</li>
+              <li>Primary developer and product owner for the North America version of the operations alerting platform fulfillment leaders use to manage backlog and customer experience risk, serving 100+ sites. Wrote the original architecture and design document as my first project at Amazon, built the real-time alerting alongside another engineer, and later transitioned it to a new owner.</li>
+              <li>Took over an unowned pipeline feeding shift-level productivity data available in no other source system, with two director escalations open. Resolved the data quality and missing data errors behind them and kept it running; its dashboard saw 30-40K monthly views spanning operations, program, business and director-level users. Still in production.</li>
+              <li>Became the reference point for two BIEs and three business analysts across four regions: wrote the onboarding documentation, ran architecture training, and mentored on stored procedure optimization and data validation.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="org">
+        <div class="org-meta reveal">
+          <div class="org-logo"><img src="logos/csuf.png" alt="Cal State Fullerton logo" loading="lazy" onerror="logoFallback(this,'CSUF')"></div>
+          <div class="org-name">Cal State Fullerton</div>
+          <div class="org-dates">Sep 2019 - May 2021<br>Fullerton, CA</div>
+        </div>
+        <div class="org-roles">
+          <div class="role reveal">
+            <div class="role-head"><div class="role-title">Graduate Assistant · Office of Research &amp; Sponsored Projects</div></div>
+            <ul class="bullets">
+              <li>Collaborated with the Associate Vice President to design and produce the department's annual report, making it accessible to a campus community of 45,000+ students and faculty.</li>
+              <li>Maintained the department website, managed communications and scheduling, and supported coordination of research workshops and events to promote campus-wide research initiatives.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
   <!-- PROJECTS -->
   <section class="project" id="project-1" data-section="projects">
     <div class="wrap">
+      <div class="divider-label reveal"><span class="divider"></span>Projects</div>
+      <h2 class="heading reveal d1">What I've built</h2>
       <div class="project-grid">
         <div class="project-text">
           <div class="divider-label reveal"><span class="divider"></span>01</div>
@@ -500,62 +587,6 @@
     </div>
   </section>
 
-  <!-- EXPERIENCE -->
-  <section class="section" id="experience" data-section="experience">
-    <div class="wrap">
-      <div class="divider-label reveal"><span class="divider"></span>Experience</div>
-      <h2 class="heading reveal d1">Where I've worked</h2>
-
-      <div class="org">
-        <div class="org-meta reveal">
-          <div class="org-logo"><img src="logos/amazon.png" alt="Amazon logo" loading="lazy" onerror="logoFallback(this,'AMZN')"></div>
-          <div class="org-name">Amazon</div>
-          <div class="org-dates">Aug 2021 - Present<br>Seattle, WA</div>
-        </div>
-        <div class="org-roles">
-          <div class="role reveal">
-            <div class="role-head"><div class="role-title">Business Intelligence Engineer · Pharmacy</div><div class="role-date">Jun 2025 - Present</div></div>
-            <ul class="bullets">
-              <li>Migrated the full performance guarantee reporting stack for two pharmacy benefit manager partners off another org's infrastructure: 12 contractual metrics, 46 ETL pipelines and 24 warehouse tables across dev and prod, plus SFTP delivery to external partners.</li>
-              <li>Repeatedly catch reporting logic errors on contractual metrics before they trigger financial penalties. Audited one after a threshold breach, proved 40 fulfillment errors had been wrongly counted against Amazon, and drove the fix that corrected the quarter.</li>
-              <li>Resolved a Sev-2 contract compliance defect in partner call metrics, correcting the calculation from 100% of calls to the contractual top 80%, then deploying and backfilling history so partner-facing dashboards were accurate.</li>
-              <li>Built the first proactive data quality alerting on metrics carrying financial exposure, where none existed before.</li>
-              <li>Automated the weekly operations speed business review and the daily executive flash report, both previously assembled by hand, delivering a PDF and formula-level Excel workbook to a self-service subscriber list.</li>
-              <li>Launched three QuickSight dashboards on fulfillment learning curves and pharmacy services productivity, used as evidence in State Board of Pharmacy inspections and regulatory accreditation.</li>
-              <li>Built North America kiosk launch analytics, including replenishment and order pipelines giving visibility into kiosk performance across launch markets.</li>
-            </ul>
-          </div>
-          <div class="role reveal">
-            <div class="role-head"><div class="role-title">Business Intelligence Engineer · Central Operations</div><div class="role-date">Aug 2021 - Jun 2025</div></div>
-            <ul class="bullets">
-              <li>Took over the model behind Amazon's global fulfillment operational planning weeks before the 2025 annual cycle, when the maintaining team moved orgs. Reverse-engineered nine interconnected stored procedures from a short handover and delivered the cycle on schedule across NA, EU, Japan and India.</li>
-              <li>Diagnosed that system's structural problems, including manual execution triggers, no version control, scattered dashboard queries and minimal documentation, and scoped the modernization plan to address them.</li>
-              <li>Primary developer and product owner for the North America version of the operations alerting platform fulfillment leaders use to manage backlog and customer experience risk, serving 100+ sites. Wrote the original architecture and design document as my first project at Amazon, built the real-time alerting alongside another engineer, and later transitioned it to a new owner.</li>
-              <li>Took over an unowned pipeline feeding shift-level productivity data available in no other source system, with two director escalations open. Resolved the data quality and missing data errors behind them and kept it running; its dashboard saw 30-40K monthly views spanning operations, program, business and director-level users. Still in production.</li>
-              <li>Became the reference point for two BIEs and three business analysts across four regions: wrote the onboarding documentation, ran architecture training, and mentored on stored procedure optimization and data validation.</li>
-            </ul>
-          </div>
-        </div>
-      </div>
-
-      <div class="org">
-        <div class="org-meta reveal">
-          <div class="org-logo"><img src="logos/csuf.png" alt="Cal State Fullerton logo" loading="lazy" onerror="logoFallback(this,'CSUF')"></div>
-          <div class="org-name">Cal State Fullerton</div>
-          <div class="org-dates">Sep 2019 - May 2021<br>Fullerton, CA</div>
-        </div>
-        <div class="org-roles">
-          <div class="role reveal">
-            <div class="role-head"><div class="role-title">Graduate Assistant · Office of Research &amp; Sponsored Projects</div></div>
-            <ul class="bullets">
-              <li>Collaborated with the Associate Vice President to design and produce the department's annual report, making it accessible to a campus community of 45,000+ students and faculty.</li>
-              <li>Maintained the department website, managed communications and scheduling, and supported coordination of research workshops and events to promote campus-wide research initiatives.</li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
 
   <!-- SKILLS -->
   <section class="section" id="skills" data-section="skills">
@@ -572,6 +603,7 @@
       </div>
     </div>
   </section>
+
 
   <!-- JOURNEY -->
   <section class="section" id="journey" data-section="journey">
@@ -625,6 +657,7 @@
     </div>
   </section>
 
+
   <!-- EDUCATION -->
   <section class="section" id="education" data-section="journey" style="padding-top:2rem">
     <div class="wrap">
@@ -649,29 +682,6 @@
     </div>
   </section>
 
-  <!-- DETAILS / PROFILE -->
-  <section class="section" id="details" data-section="details">
-    <div class="wrap">
-      <div class="profile-grid">
-        <div class="profile-text">
-          <h3 class="h3 reveal">Hi there</h3>
-          <p class="reveal d1">I'm Sanket, a <strong>Business Intelligence Engineer at <a class="link" href="https://www.amazon.jobs" target="_blank" rel="noopener">Amazon</a></strong> in Seattle, five years in. At Amazon, BIE is an analytics and data engineering role: I design and build the pipelines, dimensional models and self-serve reporting that business, finance, operations and external partners run on.</p>
-          <p class="reveal d1">I tend to end up on the systems nobody owns. Two of my main projects were inherited under pressure, both were on fire when I got them, and both are still running. My focus is the full stack from ingestion and transformation through modeling to the BI layer, with an emphasis on reliability, automation and catching a bad number before anyone downstream sees it.</p>
-          <p class="reveal d2">I hold an <strong>MS in Computer Engineering from Cal State Fullerton</strong> and a BE in Electronics &amp; Telecommunications from the University of Pune. I'm always up for talking data, so feel free to <a class="link" href="https://calendar.app.google/ZpdEWqV7EaWZCEdR7" target="_blank" rel="noopener">grab a time on my calendar</a> or drop me a line at <a class="link" href="mailto:sanket.thakre3@gmail.com">sanket.thakre3@gmail.com</a>.</p>
-          <ul class="facts reveal d2">
-            <li><span>Location</span><span>Seattle, WA</span></li>
-            <li><span>Currently</span><span>BIE @ Amazon Pharmacy</span></li>
-            <li><span>Open to</span><span>Analytics / Data / BI Engineering, remote or relocation</span></li>
-          </ul>
-        </div>
-        <div class="profile-visual reveal" id="profileVisual">
-          <div class="divider-label"><span class="divider"></span>About me</div>
-          <div class="photo-frame"><img src="profile_photo_portrait.jpg" alt="Sanket Thakre smiling, in a grey suit" loading="lazy"></div>
-          <div class="name-deva" lang="mr" aria-label="Sanket in Devanagari"><span>सं</span><span>के</span><span>त</span></div>
-        </div>
-      </div>
-    </div>
-  </section>
 
   <!-- CONTACT -->
   <section class="section contact" id="contact" data-section="contact">
