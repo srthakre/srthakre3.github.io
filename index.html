@@ -183,12 +183,12 @@
     .laptop-lid { position: relative; background: #1d1d1f; border-radius: 18px 18px 6px 6px; padding: 2.2% 2.2% 3%; box-shadow: 0 0 0 1px rgba(255,255,255,.08) inset, 0 40px 80px -20px rgba(0,0,0,.6); }
     :root[data-theme="light"] .laptop-lid { box-shadow: 0 0 0 1px rgba(0,0,0,.25) inset, 0 40px 80px -24px rgba(0,0,0,.35); }
     .laptop-lid::before { content: ''; position: absolute; top: 1%; left: 50%; width: 6px; height: 6px; margin-left: -3px; border-radius: 50%; background: #2c2c2e; }
-    .screen { position: relative; aspect-ratio: 16 / 9.5; background: #f8fafc; border-radius: 4px; overflow: hidden; display: flex; flex-direction: column; }
-    .browser-bar { flex: 0 0 auto; height: 8.5%; min-height: 20px; display: flex; align-items: center; gap: 6px; padding: 0 3%; background: #e9edf2; border-bottom: 1px solid #d7dde5; }
+    .screen { position: relative; aspect-ratio: 16 / 9.5; background: #0d0e10; border-radius: 4px; overflow: hidden; display: flex; flex-direction: column; }
+    .browser-bar { flex: 0 0 auto; height: 8.5%; min-height: 20px; display: flex; align-items: center; gap: 6px; padding: 0 3%; background: #1c1d20; border-bottom: 1px solid rgba(255,255,255,.08); }
     .browser-bar i { width: 9px; height: 9px; border-radius: 50%; background: #ff5f57; flex-shrink: 0; }
     .browser-bar i:nth-child(2) { background: #febc2e; } .browser-bar i:nth-child(3) { background: #28c840; }
-    .browser-bar span { margin-left: 3%; flex: 1; max-width: 70%; height: 62%; border-radius: 5px; background: #fff; color: #64748b; font-size: clamp(.5rem, .75vw, .68rem); display: flex; align-items: center; padding: 0 .7em; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
-    .screen-body { flex: 1; display: flex; align-items: center; justify-content: center; padding: 3%; }
+    .browser-bar span { margin-left: 3%; flex: 1; max-width: 70%; height: 62%; border-radius: 5px; background: #2a2b2f; color: rgba(255,255,255,.55); font-size: clamp(.5rem, .75vw, .68rem); display: flex; align-items: center; padding: 0 .7em; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+    .screen-body { flex: 1; display: flex; align-items: center; justify-content: center; padding: 0; min-height: 0; }
     .screen-body img { width: 100%; height: auto; max-height: 100%; object-fit: contain; }
     .laptop-base { position: relative; height: 0; padding-bottom: 3.4%; margin: 0 -7%; background: linear-gradient(#3a3a3c, #1c1c1e); border-radius: 2px 2px 14px 14px; }
     .laptop-base::before { content: ''; position: absolute; top: 0; left: 50%; width: 16%; height: 38%; margin-left: -8%; background: #141416; border-radius: 0 0 8px 8px; }
@@ -273,7 +273,7 @@
     .modal-close { width: 40px; height: 40px; border: 1px solid var(--line-strong); background: none; color: var(--text); font-size: 1.1rem; cursor: pointer; transition: background .2s; }
     .modal-close:hover { background: var(--line); }
     .modal iframe { flex: 1; width: 100%; border: 0; background: #fff; }
-    .modal-body { padding: 1.4rem; overflow: auto; background: #f8fafc; }
+    .modal-body { padding: 0; overflow: auto; background: #0d0e10; }
 
     /* ── RESPONSIVE ───────────────────────────────── */
     @media (max-width: 1100px) {
@@ -649,7 +649,7 @@
 
 <!-- ARCHITECTURE MODAL -->
 <div class="modal" id="archModal" role="dialog" aria-modal="true" aria-label="Architecture diagram">
-  <div class="modal-box" style="max-width:1000px">
+  <div class="modal-box" style="width:min(1240px,100%)">
     <div class="modal-head">
       <span class="modal-title" id="archModalTitle">Architecture</span>
       <button class="modal-close" onclick="closeArch()" aria-label="Close">✕</button>
