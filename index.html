@@ -221,17 +221,6 @@
     .skill-list li:hover { border-color: var(--primary); color: var(--text); }
     .skill-note { font-size: .82rem; color: var(--text-light); margin-top: .9rem; }
 
-    /* ── JOURNEY (vertical timeline) ──────────────── */
-    .timeline { position: relative; max-width: 780px; padding-left: 2.2rem; }
-    .timeline::before { content: ''; position: absolute; left: 5px; top: 8px; bottom: 8px; width: 1px; background: linear-gradient(to bottom, var(--primary), var(--line) 85%); }
-    .tl-item { position: relative; padding-bottom: 2.8rem; }
-    .tl-item:last-child { padding-bottom: 0; }
-    .tl-dot { position: absolute; left: calc(-2.2rem + 0px); top: 7px; width: 11px; height: 11px; background: var(--bg); border: 1px solid var(--primary); transform: rotate(45deg); }
-    .tl-dot.active { background: var(--primary); }
-    .tl-year { font-size: .72rem; font-weight: 600; letter-spacing: .14em; text-transform: uppercase; color: var(--primary); margin-bottom: .35rem; }
-    .tl-title { font-size: 1.15rem; font-weight: 600; color: var(--text); margin-bottom: .35rem; }
-    .tl-sub { font-size: .98rem; line-height: 1.75; color: var(--text-body); }
-
     /* ── EDUCATION ────────────────────────────────── */
     .edu-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 3.5rem; }
     .edu { border-top: 1px solid var(--line); padding-top: 2rem; }
@@ -358,7 +347,6 @@
     <li><a href="#experience" data-nav="experience">Experience</a></li>
     <li><a href="#project-1" data-nav="projects">Projects</a></li>
     <li><a href="#skills" data-nav="skills">Skills</a></li>
-    <li><a href="#journey" data-nav="journey">Journey</a></li>
     <li><a href="#contact" data-nav="contact">Contact</a></li>
   </ul>
   <div class="socials">
@@ -379,7 +367,6 @@
   <a class="m-link" href="#experience">Experience</a>
   <a class="m-link" href="#project-1">Projects</a>
   <a class="m-link" href="#skills">Skills</a>
-  <a class="m-link" href="#journey">Journey</a>
   <a class="m-link" href="#contact">Contact</a>
   <div class="m-socials">
     <a href="https://linkedin.com/in/srthakre" target="_blank" rel="noopener" aria-label="LinkedIn"><svg viewBox="0 0 24 24"><path d="M20.45 20.45h-3.55v-5.57c0-1.33-.03-3.04-1.85-3.04-1.86 0-2.14 1.45-2.14 2.94v5.67H9.35V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.06 2.06 0 1 1 0-4.13 2.06 2.06 0 0 1 0 4.13zM7.12 20.45H3.56V9h3.56v11.45zM22.23 0H1.77C.79 0 0 .77 0 1.73v20.54C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.73V1.73C24 .77 23.2 0 22.22 0z"/></svg></a>
@@ -400,7 +387,7 @@
         <span class="line line1">Analytics Engineer</span>
         <span class="line line2"><span class="plus" aria-hidden="true">+</span><span class="rotator"><span class="rotator-word" id="rotator">Data Engineer</span><span class="caret" aria-hidden="true"></span></span></span>
       </h2>
-      <p class="intro-sub">Business Intelligence Engineer at Amazon in Seattle. Five years building the data pipelines, dimensional models and self-serve analytics that teams run on.</p>
+      <p class="intro-sub">BIE at Amazon in Seattle. Five years building data pipelines, models and self-serve analytics.</p>
       <div class="intro-actions">
         <a href="https://calendar.app.google/ZpdEWqV7EaWZCEdR7" target="_blank" rel="noopener" class="btn btn-primary">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><rect x="3.5" y="5" width="17" height="15.5" rx="1"/><path d="M3.5 10h17M8 3v4M16 3v4"/></svg>
@@ -419,13 +406,12 @@
       <div class="profile-grid">
         <div class="profile-text">
           <h3 class="h3 reveal">Hi there</h3>
-          <p class="reveal d1">I'm Sanket, a <strong>Business Intelligence Engineer at <a class="link" href="https://www.amazon.jobs" target="_blank" rel="noopener">Amazon</a></strong> in Seattle, five years in. At Amazon, BIE is an analytics and data engineering role: I design and build the pipelines, dimensional models and self-serve reporting that business, finance, operations and external partners run on.</p>
-          <p class="reveal d1">I tend to end up on the systems nobody owns. Two of my main projects were inherited under pressure, both were on fire when I got them, and both are still running. My focus is the full stack from ingestion and transformation through modeling to the BI layer, with an emphasis on reliability, automation and catching a bad number before anyone downstream sees it.</p>
-          <p class="reveal d2">I hold an <strong>MS in Computer Engineering from Cal State Fullerton</strong> and a BE in Electronics &amp; Telecommunications from the University of Pune. I'm always up for talking data, so feel free to <a class="link" href="https://calendar.app.google/ZpdEWqV7EaWZCEdR7" target="_blank" rel="noopener">grab a time on my calendar</a> or drop me a line at <a class="link" href="mailto:sanket.thakre3@gmail.com">sanket.thakre3@gmail.com</a>.</p>
+          <p class="reveal d1">I'm Sanket, a <strong>Business Intelligence Engineer at <a class="link" href="https://www.amazon.jobs" target="_blank" rel="noopener">Amazon</a></strong> in Seattle. I build the pipelines, dimensional models and self-serve reporting that business, finance, operations and external partners run on.</p>
+          <p class="reveal d1">I tend to end up on the systems nobody owns, and I focus on reliability, automation and catching a bad number before anyone downstream sees it. Always up for talking data: <a class="link" href="https://calendar.app.google/ZpdEWqV7EaWZCEdR7" target="_blank" rel="noopener">grab a time</a> or email <a class="link" href="mailto:sanket.thakre3@gmail.com">sanket.thakre3@gmail.com</a>.</p>
           <ul class="facts reveal d2">
             <li><span>Location</span><span>Seattle, WA</span></li>
             <li><span>Currently</span><span>BIE @ Amazon Pharmacy</span></li>
-            <li><span>Open to</span><span>Analytics / Data / BI Engineering, remote or relocation</span></li>
+            <li><span>Open to</span><span>AE / DE / BIE roles, remote or relocation</span></li>
           </ul>
         </div>
         <div class="profile-visual reveal" id="profileVisual">
@@ -467,23 +453,18 @@
           <div class="role reveal">
             <div class="role-head"><div class="role-title">Business Intelligence Engineer · Pharmacy</div><div class="role-date">Jun 2025 - Present</div></div>
             <ul class="bullets">
-              <li>Migrated the full performance guarantee reporting stack for two pharmacy benefit manager partners off another org's infrastructure: 12 contractual metrics, 46 ETL pipelines and 24 warehouse tables across dev and prod, plus SFTP delivery to external partners.</li>
-              <li>Repeatedly catch reporting logic errors on contractual metrics before they trigger financial penalties. Audited one after a threshold breach, proved 40 fulfillment errors had been wrongly counted against Amazon, and drove the fix that corrected the quarter.</li>
-              <li>Resolved a Sev-2 contract compliance defect in partner call metrics, correcting the calculation from 100% of calls to the contractual top 80%, then deploying and backfilling history so partner-facing dashboards were accurate.</li>
-              <li>Built the first proactive data quality alerting on metrics carrying financial exposure, where none existed before.</li>
-              <li>Automated the weekly operations speed business review and the daily executive flash report, both previously assembled by hand, delivering a PDF and formula-level Excel workbook to a self-service subscriber list.</li>
-              <li>Launched three QuickSight dashboards on fulfillment learning curves and pharmacy services productivity, used as evidence in State Board of Pharmacy inspections and regulatory accreditation.</li>
-              <li>Built North America kiosk launch analytics, including replenishment and order pipelines giving visibility into kiosk performance across launch markets.</li>
+              <li>Migrated partner performance-guarantee reporting for two PBM partners: 12 contractual metrics, 46 ETL pipelines and 24 warehouse tables, plus SFTP delivery.</li>
+              <li>Caught contractual metric errors before they triggered penalties, including 40 fulfillment errors wrongly counted against Amazon, and drove the fix.</li>
+              <li>Built the first proactive data quality alerting on metrics with financial exposure.</li>
+              <li>Automated the weekly business review and daily executive flash report, previously built by hand.</li>
             </ul>
           </div>
           <div class="role reveal">
             <div class="role-head"><div class="role-title">Business Intelligence Engineer · Central Operations</div><div class="role-date">Aug 2021 - Jun 2025</div></div>
             <ul class="bullets">
-              <li>Took over the model behind Amazon's global fulfillment operational planning weeks before the 2025 annual cycle, when the maintaining team moved orgs. Reverse-engineered nine interconnected stored procedures from a short handover and delivered the cycle on schedule across NA, EU, Japan and India.</li>
-              <li>Diagnosed that system's structural problems, including manual execution triggers, no version control, scattered dashboard queries and minimal documentation, and scoped the modernization plan to address them.</li>
-              <li>Primary developer and product owner for the North America version of the operations alerting platform fulfillment leaders use to manage backlog and customer experience risk, serving 100+ sites. Wrote the original architecture and design document as my first project at Amazon, built the real-time alerting alongside another engineer, and later transitioned it to a new owner.</li>
-              <li>Took over an unowned pipeline feeding shift-level productivity data available in no other source system, with two director escalations open. Resolved the data quality and missing data errors behind them and kept it running; its dashboard saw 30-40K monthly views spanning operations, program, business and director-level users. Still in production.</li>
-              <li>Became the reference point for two BIEs and three business analysts across four regions: wrote the onboarding documentation, ran architecture training, and mentored on stored procedure optimization and data validation.</li>
+              <li>Took over the global fulfillment planning model weeks before the 2025 cycle, reverse-engineered nine stored procedures and delivered on time across NA, EU, Japan and India.</li>
+              <li>Primary developer and product owner of the North America operations alerting platform serving 100+ sites.</li>
+              <li>Rescued an unowned productivity pipeline with two director escalations open; its dashboard drew 30-40K monthly views.</li>
             </ul>
           </div>
         </div>
@@ -499,8 +480,7 @@
           <div class="role reveal">
             <div class="role-head"><div class="role-title">Graduate Assistant · Office of Research &amp; Sponsored Projects</div></div>
             <ul class="bullets">
-              <li>Collaborated with the Associate Vice President to design and produce the department's annual report, making it accessible to a campus community of 45,000+ students and faculty.</li>
-              <li>Maintained the department website, managed communications and scheduling, and supported coordination of research workshops and events to promote campus-wide research initiatives.</li>
+              <li>Produced the department's annual report for a 45,000+ campus community and maintained the department website.</li>
             </ul>
           </div>
         </div>
@@ -518,7 +498,7 @@
         <div class="project-text">
           <div class="divider-label reveal"><span class="divider"></span>01</div>
           <h3 class="h3 reveal d1">End-to-End ELT Pipeline with dbt &amp; Airflow</h3>
-          <p class="reveal d2">9.5M rows of NYC TLC trip data ingested into PostgreSQL, transformed with dbt (staging → intermediate → dimensional mart), orchestrated with Apache Airflow, validated with 22 passing dbt tests and monitored with Slack alerts. Fully containerized with Docker.</p>
+          <p class="reveal d2">9.5M NYC taxi trips loaded into PostgreSQL, modeled with dbt into a star schema, orchestrated by Airflow and covered by 22 dbt tests. Dockerized, with Slack alerts.</p>
           <div class="stack reveal d2"><span>Python</span><span>dbt</span><span>Airflow</span><span>PostgreSQL</span><span>GitHub Actions</span></div>
           <div class="project-actions reveal d3">
             <a href="https://github.com/srthakre/nyc-taxi-elt-pipeline" target="_blank" rel="noopener" class="btn btn-primary">View on GitHub</a>
@@ -543,7 +523,7 @@
         <div class="project-text">
           <div class="divider-label reveal"><span class="divider"></span>02</div>
           <h3 class="h3 reveal d1">Automated Data Quality &amp; Monitoring Framework</h3>
-          <p class="reveal d2">Custom Python framework for automated data quality monitoring: schema validation, null and duplicate detection, referential integrity checks and statistical outlier alerting. Generates HTML and JSON reports, with 6/6 pytest tests passing and CI via GitHub Actions.</p>
+          <p class="reveal d2">Python framework that checks schemas, nulls, duplicates, referential integrity and outliers, then publishes HTML and JSON reports. Tested with pytest, CI on GitHub Actions.</p>
           <div class="stack reveal d2"><span>Python</span><span>pytest</span><span>Pandas</span><span>SQL</span></div>
           <div class="project-actions reveal d3">
             <a href="https://github.com/srthakre/data-quality-framework" target="_blank" rel="noopener" class="btn btn-primary">View on GitHub</a>
@@ -568,7 +548,7 @@
         <div class="project-text">
           <div class="divider-label reveal"><span class="divider"></span>03</div>
           <h3 class="h3 reveal d1">Self-Serve Analytics Platform for E-commerce</h3>
-          <p class="reveal d2">Raw e-commerce data → dbt dimensional model → governed metric layer → interactive dashboard covering revenue, churn and cohort retention, with documented data lineage.</p>
+          <p class="reveal d2">Raw e-commerce data → dbt dimensional model → governed metrics → dashboard for revenue, churn and cohort retention.</p>
           <div class="stack reveal d2"><span>SQL</span><span>dbt</span><span>Redshift</span><span>QuickSight</span></div>
           <div class="project-actions reveal d3">
             <a href="https://github.com/srthakre/ecommerce-analytics-platform" target="_blank" rel="noopener" class="btn btn-primary">View on GitHub</a>
@@ -599,67 +579,14 @@
         <div class="reveal d2"><div class="skill-cat">Cloud &amp; Warehouses</div><ul class="skill-list"><li>Amazon Redshift</li><li>AWS Athena</li><li>AWS S3</li><li>AWS Glue</li><li>AWS Lambda</li><li>AWS IAM</li><li>MySQL</li><li>PostgreSQL</li></ul></div>
         <div class="reveal"><div class="skill-cat">BI &amp; Visualization</div><ul class="skill-list"><li>Amazon QuickSight</li><li>Tableau</li><li>Power BI</li><li>Looker</li><li>Jupyter Notebook</li></ul></div>
         <div class="reveal d1"><div class="skill-cat">Tools &amp; Practices</div><ul class="skill-list"><li>Git</li><li>Code Review</li><li>GitHub Actions</li><li>Dev / Prod Separation</li><li>Agile / Scrum</li><li>Performance Tuning</li><li>Root Cause Analysis</li><li>Runbooks &amp; SOPs</li></ul></div>
-        <div class="reveal d2"><div class="skill-cat">Modern Stack · Personal Projects</div><ul class="skill-list"><li>dbt</li><li>Apache Airflow</li><li>PostgreSQL</li><li>Docker</li><li>Great Expectations</li></ul><p class="skill-note">Built outside work. Three projects on GitHub, featured above.</p></div>
-      </div>
-    </div>
-  </section>
-
-
-  <!-- JOURNEY -->
-  <section class="section" id="journey" data-section="journey">
-    <div class="wrap">
-      <div class="divider-label reveal"><span class="divider"></span>Journey</div>
-      <h2 class="heading reveal d1">The road so far</h2>
-      <div class="timeline">
-        <div class="tl-item reveal">
-          <div class="tl-dot"></div>
-          <div class="tl-year">2013 - 2018</div>
-          <div class="tl-title">Grew up in India, studied engineering in Pune</div>
-          <div class="tl-sub">Completed a BE in Electronics &amp; Telecommunications at the University of Pune, where I first got into software and realized I liked building things that worked with data.</div>
-        </div>
-        <div class="tl-item reveal">
-          <div class="tl-dot"></div>
-          <div class="tl-year">Aug 2019</div>
-          <div class="tl-title">Packed up and moved to the US</div>
-          <div class="tl-sub">Landed in Fullerton, California to start my MS at Cal State Fullerton. New country, new city, new chapter.</div>
-        </div>
-        <div class="tl-item reveal">
-          <div class="tl-dot"></div>
-          <div class="tl-year">2019 - 2021</div>
-          <div class="tl-title">Graduate school + first US work experience</div>
-          <div class="tl-sub">Finished my MS in Computer Engineering while working as a Graduate Assistant. Got my first taste of professional work in the US supporting university research communications and operations.</div>
-        </div>
-        <div class="tl-item reveal">
-          <div class="tl-dot active"></div>
-          <div class="tl-year">Aug 2021</div>
-          <div class="tl-title">Joined Amazon and moved to Seattle</div>
-          <div class="tl-sub">Got the call from Amazon and made the move to Seattle. Started as a Business Intelligence Engineer in Central Operations, on the fulfillment analytics team, thrown into the deep end from day one, and loved it.</div>
-        </div>
-        <div class="tl-item reveal">
-          <div class="tl-dot active"></div>
-          <div class="tl-year">2021 - 2025</div>
-          <div class="tl-title">Four years building at Amazon scale</div>
-          <div class="tl-sub">Owned end-to-end data systems in Central Operations, from pipelines that run daily FC operations to planning tools used by leadership across NA, EU, Japan, and India. Learned what it means to build for reliability and scale.</div>
-        </div>
-        <div class="tl-item reveal">
-          <div class="tl-dot active"></div>
-          <div class="tl-year">Jun 2025 - Present</div>
-          <div class="tl-title">New team: Amazon Pharmacy</div>
-          <div class="tl-sub">Moved internally to Amazon Pharmacy, into a new domain with real stakes. I own the pipelines and warehouse tables behind contractual partner metrics, plus reporting that pharmacy leadership and regulators depend on. Wrong numbers here cost money, which changes how you build.</div>
-        </div>
-        <div class="tl-item reveal">
-          <div class="tl-dot active"></div>
-          <div class="tl-year">Now</div>
-          <div class="tl-title">Looking for what's next</div>
-          <div class="tl-sub">Five years in, I know what good data infrastructure looks like and what it takes to keep it alive. Now building on the modern stack in my own time: dbt, Airflow, data quality frameworks. Looking for analytics engineering, data engineering or BI engineering roles where I own the pipeline through to the decision. Seattle-based, open to remote or relocation anywhere in the US.</div>
-        </div>
+        <div class="reveal d2"><div class="skill-cat">Modern Stack · Personal Projects</div><ul class="skill-list"><li>dbt</li><li>Apache Airflow</li><li>PostgreSQL</li><li>Docker</li><li>Great Expectations</li></ul><p class="skill-note">Built outside work, see Projects above.</p></div>
       </div>
     </div>
   </section>
 
 
   <!-- EDUCATION -->
-  <section class="section" id="education" data-section="journey" style="padding-top:2rem">
+  <section class="section" id="education" data-section="skills" style="padding-top:2rem">
     <div class="wrap">
       <div class="divider-label reveal"><span class="divider"></span>Education</div>
       <h2 class="heading reveal d1">Academic background</h2>
@@ -688,7 +615,7 @@
     <div class="wrap">
       <div class="divider-label reveal"><span class="divider"></span>Contact</div>
       <h2 class="contact-title reveal d1">Let's work<br>together.</h2>
-      <p class="contact-sub reveal d2">I build reliable data pipelines, dimensional models and analytics platforms that help teams make better decisions. If you're working on something interesting in the data space, grab a time on my calendar and let's talk.</p>
+      <p class="contact-sub reveal d2">Working on something interesting in data? Grab a time on my calendar and let's talk.</p>
       <div class="contact-actions reveal d3">
         <a href="https://calendar.app.google/ZpdEWqV7EaWZCEdR7" target="_blank" rel="noopener" class="btn btn-primary">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><rect x="3.5" y="5" width="17" height="15.5" rx="1"/><path d="M3.5 10h17M8 3v4M16 3v4"/></svg>
